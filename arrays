@@ -1,0 +1,33 @@
+const bookArray = {
+    1: { id_book: 1, name: "To Kill a Mockingbird", author: "Harper Lee", isbn: "111-1111111111" },
+    2: { id_book: 2, name: "1984", author: "George Orwell", isbn: "222-2222222222" },
+    3: { id_book: 3, name: "Pride and Prejudice", author: "Jane Austen", isbn: "333-3333333333" },
+    4: { id_book: 4, name: "The Great Gatsby", author: "F. Scott Fitzgerald", isbn: "444-4444444444" },
+    5: { id_book: 5, name: "Moby Dick", author: "Herman Melville", isbn: "555-5555555555" },
+    6: { id_book: 6, name: "War and Peace", author: "Leo Tolstoy", isbn: "666-6666666666" },
+    7: { id_book: 7, name: "The Catcher in the Rye", author: "J.D. Salinger", isbn: "777-7777777777" },
+    8: { id_book: 8, name: "The Hobbit", author: "J.R.R. Tolkien", isbn: "888-8888888888" },
+    9: { id_book: 9, name: "Crime and Punishment", author: "Fyodor Dostoevsky", isbn: "999-9999999999" },
+    10: { id_book: 10, name: "The Odyssey", author: "Homer", isbn: "101-1010101010" },
+    11: { id_book: 11, name: "The Brothers Karamazov", author: "Fyodor Dostoevsky", isbn: "111-1111111112" },
+    12: { id_book: 12, name: "Brave New World", author: "Aldous Huxley", isbn: "121-1212121212" },
+    13: { id_book: 13, name: "Jane Eyre", author: "Charlotte Brontë", isbn: "131-1313131313" },
+    14: { id_book: 14, name: "Wuthering Heights", author: "Emily Brontë", isbn: "141-1414141414" },
+    15: { id_book: 15, name: "The Divine Comedy", author: "Dante Alighieri", isbn: "151-1515151515" }
+};
+
+console.log(typeof bookArray);
+
+console.log(bookArray);
+
+console.log(bookArray[1]);
+
+console.log(bookArray[1].name);
+
+console.log(Object.keys(bookArray).length);
+
+for (const key in bookArray) {
+    if (bookArray.hasOwnProperty(key)) {
+        console.log(bookArray[key].name);
+    }
+}

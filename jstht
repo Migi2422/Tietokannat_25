@@ -1,0 +1,33 @@
+function whichNumberIsHigher()
+{
+    var number1 = 5;
+    var number2 = 10;
+    if (number1 > number2){
+        console.log("Number 1 is higher than number 2");
+    } else {
+        console.log("Number 2 is higher than number 1");
+    }
+    
+}
+console.log(whichNumberIsHigher());
+
+
+function isPalindrome(str) {
+    let j = str.length - 1;
+    for (let i = 0; i < str.length; i++){
+        if(str[i] != str[j]){
+            return false;
+        }
+        j--;
+    }
+    return true;
+}
+let str1 = "saippuakivikauppias";
+let str2 = "nitin";
+let str3 = "moi";
+
+console.log(isPalindrome(str1));
+console.log(isPalindrome(str2));
+console.log(isPalindrome(str3));
+
+

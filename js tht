@@ -1,0 +1,12 @@
+function kumpiOnSuurempi(){
+    var luku1 = parseInt(document.getElementById("luku1").value);
+    var luku2 = parseInt(document.getElementById("luku2").value);
+    var vastaus = document.getElementById("vastaus");
+    if(luku1 > luku2){
+        vastaus.innerHTML = "Luku " + luku1 + " on suurempi kuin luku " + luku2;
+    } else if(luku1 < luku2){
+        vastaus.innerHTML = "Luku " + luku2 + " on suurempi kuin luku " + luku1;
+    } else {
+        vastaus.innerHTML = "Luvut ovat yhtä suuret";
+    }
+}

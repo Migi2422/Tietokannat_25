@@ -1,0 +1,19 @@
+setTimeout(doSomething,2000);
+
+function doSomething(){
+    console.log("Demonstrating the callbacks");
+}
+console.log("The application is started");
+
+setTimeout(function(){
+    console.log("anonymous callbacks");
+},3000);
+
+
+console.log("The application is started");
+setTimeout(()=>{
+    console.log("Arrow callbaks");
+},4000);
+
+
+console.log("The application is started");
